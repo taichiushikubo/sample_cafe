@@ -13,6 +13,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
+                <img src="images/コップアイコン.png" alt="Sample Cafe" class="nav-logo-img">
                 <h2>Sample Cafe</h2>
             </div>
             <div class="nav-menu" id="nav-menu">
@@ -33,12 +34,24 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Sample Cafe</h1>
-            <p class="hero-subtitle">自分にぴったりの<br>コーヒーを選ぶ</p>
+        <div class="hero-background">
+            <img src="images/カフェ外観.jpg" alt="カフェ外観" class="hero-bg-image">
+            <div class="hero-overlay"></div>
         </div>
-        <div class="hero-image">
-            <div class="coffee-cup"></div>
+        <div class="hero-content">
+            <div class="hero-text-content">
+                <h1 class="hero-title">Sample Cafe</h1>
+                <p class="hero-subtitle">自分にぴったりの<br>コーヒーを選ぶ</p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn-primary">商品を見る</a>
+                    <a href="#contact" class="btn-secondary">店舗情報</a>
+                </div>
+            </div>
+            <div class="hero-illustrations">
+                <img src="images/テイクアウトのコーヒーのアイコン1.png" alt="テイクアウトコーヒー" class="hero-illustration takeout">
+                <img src="images/コーヒー豆のアイコン素材.png" alt="コーヒー豆" class="hero-illustration beans">
+                <img src="images/コップアイコン.png" alt="コーヒーカップ" class="hero-illustration cup">
+            </div>
         </div>
     </section>
 
@@ -47,17 +60,26 @@
         <div class="container">
             <h2 class="section-title">Concept</h2>
             <div class="concept-content">
-                <p class="concept-text">
-                    見るもの、聞くこと、口にするもの。<br>
-                    日々取り入れるものが、私をつくる。
-                </p>
-                <p class="concept-text">
-                    だからこそコーヒーにも、<br>
-                    「オーガニック」という選択肢。
-                </p>
-                <p class="concept-text">
-                    身体にも自然にもやさしい、厳選されたおいしさ。
-                </p>
+                <div class="concept-text-wrapper">
+                    <img src="images/コーヒー豆のアイコン素材.png" alt="コーヒー豆" class="concept-illustration">
+                    <p class="concept-text">
+                        見るもの、聞くこと、口にするもの。<br>
+                        日々取り入れるものが、私をつくる。
+                    </p>
+                </div>
+                <div class="concept-text-wrapper">
+                    <img src="images/コップアイコン.png" alt="コーヒーカップ" class="concept-illustration">
+                    <p class="concept-text">
+                        だからこそコーヒーにも、<br>
+                        「オーガニック」という選択肢。
+                    </p>
+                </div>
+                <div class="concept-text-wrapper">
+                    <img src="images/テイクアウトのコーヒーのアイコン1.png" alt="テイクアウト" class="concept-illustration">
+                    <p class="concept-text">
+                        身体にも自然にもやさしい、厳選されたおいしさ。
+                    </p>
+                </div>
                 <p class="concept-highlight">「今日から私、自然体。」</p>
             </div>
         </div>
@@ -72,6 +94,7 @@
                     <div class="about-icon">
                         <i class="fas fa-heart"></i>
                     </div>
+                    <img src="images/コーヒー豆のアイコン素材.png" alt="コーヒー豆" class="about-illustration">
                     <h3>安全・おいしさへのこだわり</h3>
                     <p>おいしさと健康は、常に一体でありたい。だから私たちは、味にも素材にも一切妥協していません。焙煎の仕方や種類の豊富さ、化学肥料・農薩不使用の豆にこだわり、幅広い方に安心してお楽しみいただけるコーヒーをつくりました。</p>
                     <a href="#" class="btn-secondary">詳しくみる</a>
@@ -80,6 +103,7 @@
                     <div class="about-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
+                    <img src="images/コップアイコン.png" alt="コーヒーカップ" class="about-illustration">
                     <h3>環境保護への取り組み</h3>
                     <p>私たちはオーガニックコーヒーを通じて、環境保護活動を行っています。一部売上の寄付やコーヒーかすの再利用など、お客様と一緒にできる取り組みを、少しずつ積み重ねています。</p>
                     <a href="#" class="btn-secondary">詳しくみる</a>
@@ -96,6 +120,7 @@
                 <div class="product-card">
                     <div class="product-number">77</div>
                     <div class="product-category">J.blend</div>
+                    <img src="images/コップアイコン.png" alt="ライチョウブレンド" class="product-illustration">
                     <h3>ライチョウブレンド</h3>
                     <p class="product-season">Spring2024</p>
                     <p class="product-description">木漏れ日のようにやさしい酸味がそっと全体を包み込むブレンドです。酸味が苦手と感じる方にも飲んでいただきたい春のイチオシ！</p>
@@ -103,6 +128,7 @@
                 <div class="product-card">
                     <div class="product-number">02</div>
                     <div class="product-category">Straight</div>
+                    <img src="images/テイクアウトのコーヒーのアイコン1.png" alt="エチオピア" class="product-illustration">
                     <h3>エチオピア</h3>
                     <p class="product-subtitle">シダモG1 シャキッソ</p>
                     <p class="product-description">華やかな香りとフルーティーな味わいの中にスッキリとした優しい余韻。</p>
@@ -110,12 +136,14 @@
                 <div class="product-card">
                     <div class="product-number">03</div>
                     <div class="product-category">J.blend</div>
+                    <img src="images/コーヒー豆のアイコン素材.png" alt="フォレストアロマ" class="product-illustration">
                     <h3>フォレストアロマ</h3>
                     <p class="product-description">フルーティな香り、軽やかな味わい。森の中のさわやかな朝をイメージしました。</p>
                 </div>
                 <div class="product-card">
                     <div class="product-number">04</div>
                     <div class="product-category">Straight</div>
+                    <img src="images/コップアイコン.png" alt="グアテマラ" class="product-illustration">
                     <h3>グアテマラ</h3>
                     <p class="product-subtitle">アティトランSHB</p>
                     <p class="product-description">香り高く、まろやかでしっかりとした甘み。柑橘系のほのかな酸味も加わり深みのある味わい。</p>
@@ -133,11 +161,13 @@
             <div class="guide-content">
                 <h2>Taste Guide</h2>
                 <h3>あなたにぴったりのコーヒーの選び方</h3>
+                <img src="images/テイクアウトのコーヒーのアイコン1.png" alt="テイクアウト" class="guide-illustration">
                 <p>コーヒーに興味はあるけど好みの味がわからない…という方に合わせ、コーヒーの味を分布したチャートをご用意しました。また、日々のシーンに合わせた「あなたにぴったりの一杯」を経験豊かな焙煎士がご案内いたします。</p>
                 <a href="#" class="btn-secondary">詳しくみる</a>
             </div>
             <div class="guide-image">
                 <div class="taste-chart"></div>
+                <img src="images/コーヒー豆のアイコン素材.png" alt="コーヒー豆" class="chart-illustration">
             </div>
         </div>
     </section>
@@ -147,6 +177,7 @@
         <div class="container">
             <h2 class="section-title">お客さまの声</h2>
             <div class="testimonial-card">
+                <img src="images/コップアイコン.png" alt="コーヒーカップ" class="testimonial-illustration">
                 <p class="testimonial-text">ここの一杯は、コーヒー初心者の私にもやさしかった。</p>
                 <p class="testimonial-date">2023.09.06</p>
             </div>
@@ -162,16 +193,19 @@
             <h2 class="section-title">ブログ</h2>
             <div class="blog-grid">
                 <div class="blog-card">
+                    <img src="images/コーヒー豆のアイコン素材.png" alt="コーヒー豆" class="blog-illustration">
                     <p class="blog-date">2024.11.1</p>
                     <p class="blog-category">お知らせ</p>
                     <h3>2周年記念祭を開催いたします</h3>
                 </div>
                 <div class="blog-card">
+                    <img src="images/テイクアウトのコーヒーのアイコン1.png" alt="テイクアウト" class="blog-illustration">
                     <p class="blog-date">2024.5.11</p>
                     <p class="blog-category">お知らせ</p>
                     <h3>5/14 臨時休業のお知らせ</h3>
                 </div>
                 <div class="blog-card">
+                    <img src="images/コップアイコン.png" alt="コーヒーカップ" class="blog-illustration">
                     <p class="blog-date">2024.4.22</p>
                     <p class="blog-category">お知らせ</p>
                     <h3>【臨時】営業時間変更のお知らせ</h3>
@@ -189,6 +223,7 @@
             <h2 class="section-title">店舗情報</h2>
             <div class="contact-grid">
                 <div class="contact-card">
+                    <img src="images/4304_color.png" alt="カフェ店員" class="contact-illustration">
                     <h3>Sample Cafe 本店</h3>
                     <div class="contact-info">
                         <div class="info-item">
@@ -214,6 +249,7 @@
                     </div>
                 </div>
                 <div class="contact-card">
+                    <img src="images/テイクアウトのコーヒーのアイコン1.png" alt="テイクアウト" class="contact-illustration">
                     <h3>Sample Cafe 青山店</h3>
                     <div class="contact-info">
                         <div class="info-item">
@@ -259,6 +295,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
+                <img src="images/コップアイコン.png" alt="Sample Cafe" class="footer-logo">
                 <p>&copy; Sample Cafe. All Right Reserved.</p>
             </div>
         </div>

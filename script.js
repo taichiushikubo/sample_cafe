@@ -74,7 +74,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.about-card, .product-card, .blog-card, .contact-card, .testimonial-card');
+    const animateElements = document.querySelectorAll('.about-card, .product-card, .blog-card, .contact-card, .testimonial-card, .concept-text-wrapper');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
-    const coffeeCup = document.querySelector('.coffee-cup');
+    const heroBgImage = document.querySelector('.hero-bg-image');
     
-    if (hero && coffeeCup) {
-        const rate = scrolled * -0.5;
-        coffeeCup.style.transform = `translateY(${rate}px)`;
+    if (hero && heroBgImage) {
+        const rate = scrolled * -0.3;
+        heroBgImage.style.transform = `translateY(${rate}px) scale(1.05)`;
     }
 });
 
@@ -142,6 +142,45 @@ document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
     });
 });
 
+// Illustration hover effects
+document.querySelectorAll('.product-illustration, .about-illustration, .blog-illustration, .contact-illustration, .testimonial-illustration').forEach(illustration => {
+    illustration.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.2) rotate(15deg)';
+        this.style.filter = 'drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2))';
+    });
+    
+    illustration.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1) rotate(0deg)';
+        this.style.filter = 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1))';
+    });
+});
+
+// Concept illustration effects
+document.querySelectorAll('.concept-illustration').forEach(illustration => {
+    illustration.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.3) rotate(20deg)';
+        this.style.filter = 'drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2))';
+    });
+    
+    illustration.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1) rotate(0deg)';
+        this.style.filter = 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1))';
+    });
+});
+
+// Hero illustration effects
+document.querySelectorAll('.hero-illustration').forEach(illustration => {
+    illustration.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.2) rotate(10deg)';
+        this.style.filter = 'drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2))';
+    });
+    
+    illustration.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1) rotate(0deg)';
+        this.style.filter = 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1))';
+    });
+});
+
 // Taste chart animation
 const tasteChart = document.querySelector('.taste-chart');
 if (tasteChart) {
@@ -163,10 +202,25 @@ style.textContent = `
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
     }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+    }
+    
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
 `;
 document.head.appendChild(style);
 
-// Lazy loading for images (if any are added later)
+// Lazy loading for images
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -264,4 +318,29 @@ loadingStyle.textContent = `
         opacity: 1;
     }
 `;
-document.head.appendChild(loadingStyle); 
+document.head.appendChild(loadingStyle);
+
+// Random floating animation for hero illustrations
+document.addEventListener('DOMContentLoaded', () => {
+    const heroIllustrations = document.querySelectorAll('.hero-illustration');
+    heroIllustrations.forEach((illustration, index) => {
+        const delay = index * 0.5;
+        illustration.style.animationDelay = `${delay}s`;
+    });
+});
+
+// Staggered animation for concept illustrations
+document.addEventListener('DOMContentLoaded', () => {
+    const conceptWrappers = document.querySelectorAll('.concept-text-wrapper');
+    conceptWrappers.forEach((wrapper, index) => {
+        wrapper.style.animationDelay = `${index * 0.2}s`;
+    });
+});
+
+// Pulse animation for contact illustrations
+document.addEventListener('DOMContentLoaded', () => {
+    const contactIllustrations = document.querySelectorAll('.contact-illustration');
+    contactIllustrations.forEach((illustration, index) => {
+        illustration.style.animation = `pulse 3s ease-in-out infinite ${index * 0.5}s`;
+    });
+}); 
