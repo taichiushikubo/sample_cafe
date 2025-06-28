@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Cafe - 自分にぴったりのコーヒーを選ぶ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Sample Cafe</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">トップ</a>
+                <a href="#about" class="nav-link">私たちの想い</a>
+                <a href="#products" class="nav-link">取り扱い商品</a>
+                <a href="#guide" class="nav-link">コーヒーの選び方</a>
+                <a href="#blog" class="nav-link">ブログ</a>
+                <a href="#contact" class="nav-link">お問い合わせ</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sample Cafe</h1>
+            <p class="hero-subtitle">自分にぴったりの<br>コーヒーを選ぶ</p>
+        </div>
+        <div class="hero-image">
+            <div class="coffee-cup"></div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept">
+        <div class="container">
+            <h2 class="section-title">Concept</h2>
+            <div class="concept-content">
+                <p class="concept-text">
+                    見るもの、聞くこと、口にするもの。<br>
+                    日々取り入れるものが、私をつくる。
+                </p>
+                <p class="concept-text">
+                    だからこそコーヒーにも、<br>
+                    「オーガニック」という選択肢。
+                </p>
+                <p class="concept-text">
+                    身体にも自然にもやさしい、厳選されたおいしさ。
+                </p>
+                <p class="concept-highlight">「今日から私、自然体。」</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">私たちの想い</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>安全・おいしさへのこだわり</h3>
+                    <p>おいしさと健康は、常に一体でありたい。だから私たちは、味にも素材にも一切妥協していません。焙煎の仕方や種類の豊富さ、化学肥料・農薩不使用の豆にこだわり、幅広い方に安心してお楽しみいただけるコーヒーをつくりました。</p>
+                    <a href="#" class="btn-secondary">詳しくみる</a>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>環境保護への取り組み</h3>
+                    <p>私たちはオーガニックコーヒーを通じて、環境保護活動を行っています。一部売上の寄付やコーヒーかすの再利用など、お客様と一緒にできる取り組みを、少しずつ積み重ねています。</p>
+                    <a href="#" class="btn-secondary">詳しくみる</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">取り扱い商品</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-number">77</div>
+                    <div class="product-category">J.blend</div>
+                    <h3>ライチョウブレンド</h3>
+                    <p class="product-season">Spring2024</p>
+                    <p class="product-description">木漏れ日のようにやさしい酸味がそっと全体を包み込むブレンドです。酸味が苦手と感じる方にも飲んでいただきたい春のイチオシ！</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-number">02</div>
+                    <div class="product-category">Straight</div>
+                    <h3>エチオピア</h3>
+                    <p class="product-subtitle">シダモG1 シャキッソ</p>
+                    <p class="product-description">華やかな香りとフルーティーな味わいの中にスッキリとした優しい余韻。</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-number">03</div>
+                    <div class="product-category">J.blend</div>
+                    <h3>フォレストアロマ</h3>
+                    <p class="product-description">フルーティな香り、軽やかな味わい。森の中のさわやかな朝をイメージしました。</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-number">04</div>
+                    <div class="product-category">Straight</div>
+                    <h3>グアテマラ</h3>
+                    <p class="product-subtitle">アティトランSHB</p>
+                    <p class="product-description">香り高く、まろやかでしっかりとした甘み。柑橘系のほのかな酸味も加わり深みのある味わい。</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-primary">一覧をみる</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taste Guide Section -->
+    <section id="guide" class="taste-guide">
+        <div class="container">
+            <div class="guide-content">
+                <h2>Taste Guide</h2>
+                <h3>あなたにぴったりのコーヒーの選び方</h3>
+                <p>コーヒーに興味はあるけど好みの味がわからない…という方に合わせ、コーヒーの味を分布したチャートをご用意しました。また、日々のシーンに合わせた「あなたにぴったりの一杯」を経験豊かな焙煎士がご案内いたします。</p>
+                <a href="#" class="btn-secondary">詳しくみる</a>
+            </div>
+            <div class="guide-image">
+                <div class="taste-chart"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">お客さまの声</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">ここの一杯は、コーヒー初心者の私にもやさしかった。</p>
+                <p class="testimonial-date">2023.09.06</p>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-secondary">一覧をみる</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">ブログ</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <p class="blog-date">2024.11.1</p>
+                    <p class="blog-category">お知らせ</p>
+                    <h3>2周年記念祭を開催いたします</h3>
+                </div>
+                <div class="blog-card">
+                    <p class="blog-date">2024.5.11</p>
+                    <p class="blog-category">お知らせ</p>
+                    <h3>5/14 臨時休業のお知らせ</h3>
+                </div>
+                <div class="blog-card">
+                    <p class="blog-date">2024.4.22</p>
+                    <p class="blog-category">お知らせ</p>
+                    <h3>【臨時】営業時間変更のお知らせ</h3>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-secondary">詳しくみる</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">店舗情報</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Sample Cafe 本店</h3>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <strong>営業時間</strong>
+                            <p>10:00~17:00</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>定休日</strong>
+                            <p>不定休</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>アクセス</strong>
+                            <p>東京都渋谷区○○○○<br>Google map</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>お問い合わせ</strong>
+                            <p>03-XXXX-XXXX</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>駐車スペース</strong>
+                            <p>10台</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3>Sample Cafe 青山店</h3>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <strong>営業時間</strong>
+                            <p>10:00~17:00</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>定休日</strong>
+                            <p>不定休</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>アクセス</strong>
+                            <p>東京都港区○○○○<br>Google map</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>お問い合わせ</strong>
+                            <p>03-XXXX-XXXX</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>駐車スペース</strong>
+                            <p>共有50台</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="#about">私たちの想い</a>
+                    <a href="#products">取り扱い商品</a>
+                    <a href="#guide">コーヒーの選び方</a>
+                    <a href="#blog">ブログ</a>
+                    <a href="#contact">お問い合わせ</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Sample Cafe. All Right Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
